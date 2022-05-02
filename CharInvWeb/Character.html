@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CREATE A CHARACTER</title>
+
+    <link rel="stylesheet" href=".//style.css">
+    
+</head>
+
+<body>
+
+    <nav>
+        <a id="toggle">MENU</a>
+        <a class="nav-link " href="./index.html">HOME</a>
+        <a class="nav-link" href="./Character.html">CREATE A CHARACTER</a>
+        <a class="nav-link" href="">LIST CHARACTERS</a>
+        <a class="nav-link" href="">UPDATE CHARACTER</a>
+        <a class="nav-link" href="">DELETE CHARACTER</a>
+    </nav>
+    
+    <header>
+
+        <h1>Create a Character</h1>
+        <p>fill in the information below to create your character</p>
+
+    </header>
+    
+    <div class="container">
+        <section id="banner" class="container">
+            <h2>Status: <span id="status"></span></h2>
+        </section>
+        <main class="container">
+            <div id="data-table">
+                
+            </div>
+            <h2>Create your Character:</h2>
+
+            <form id="data-form" class="container">
+                <fieldset id="general-info">
+
+                    <legend><h3>Character Details</h3></legend>
+                    <br>
+                    <label for="characterName">Character Name:</label>
+                    <input type="text" id="characterName" name="characterName"><br>
+                    <br>
+                    <label for="characterAge">Age:</label>
+                    <input type="number" id="characterAge" name="characterAge"><br>
+                    <br>
+                    <label for="genderIdentity">Gender Identity</label>
+                    <input type="text" id="genderIdentity" name="genderIdentity"><br>
+                    <br>    
+                    <label for="species">Species:</label>
+                    <input type="text" id="species" name="species"><br>
+
+                </fieldset>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </main>
+        
+    </div>
+
+    <footer>
+        
+        <p><small>Allister Gardner &copy; 2022</small></p>
+        
+    </footer>
+
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/table-manager.js"></script>
+    <script src="/scripts/error-handler.js"></script>
+    <script src="/scripts/status-handler.js"></script>
+    <script src="/scripts/character/create-character.js"></script>
+ 
+</body>
+</html>
